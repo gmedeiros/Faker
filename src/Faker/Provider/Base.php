@@ -192,7 +192,7 @@ class Base
         $numElements = 0;
 
         while ($numElements < $count) {
-            $num = mt_rand(0, $highKey);
+            $num = random_int(0, $highKey);
 
             if (!$allowDuplicates) {
                 if (isset($keys[$num])) {
